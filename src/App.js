@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Button from 'react-bootstrap/Button'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css'
+import Score from './components/Score'
+import Genres from './components/Genres'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <header className="App-header">
+      Predicting Video Game Rating from Genres using Multilayer Perceptron
+    </header>
 
-export default App;
+    <Button variant="primary" size="xxl">
+      flat button
+    </Button>
+
+    <Genres />
+    <Score />
+
+  </div>
+)
+
+export default App
