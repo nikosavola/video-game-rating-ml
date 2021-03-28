@@ -1,10 +1,12 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card'
+import CardColumns from 'react-bootstrap/CardColumns'
 import BootstrapTable from 'react-bootstrap-table-next'
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit'
 import { useSelector, useDispatch } from 'react-redux'
 
 const Genres = () => {
-  const count = useSelector(selectCount)
+  const genresSelected = useSelector((state) => state.genres)
   const dispatch = useDispatch()
 
   const { SearchBar } = Search
@@ -14,7 +16,7 @@ const Genres = () => {
     text: 'Genre',
   }, {
     dataField: 'effect',
-    text: 'Effect',
+    text: 'Positive effect',
   }]
 
   const tags = [{
@@ -29,58 +31,57 @@ const Genres = () => {
 
   const handleOnSelect = (row, isSelect) => {
     if (isSelect) {
-      this.setState(() => ({
-        selected: [...this.state.selected, row.id],
-      }))
+      dispatch({ type: 'genre/add', id: row.id })
     } else {
-      this.setState(() => ({
-        selected: this.state.selected.filter((x) => x !== row.id),
-      }))
+      dispatch({ type: 'genre/remove', id: row.id })
     }
-  }
-
-  const handleOnSelectAll = (isSelect, rows) => {
-    const ids = rows.map((r) => r.id)
-    if (isSelect) {
-      this.setState(() => ({
-        selected: ids,
-      }))
-    } else {
-      this.setState(() => ({
-        selected: [],
-      }))
-    }
+    console.log(genresSelected)
   }
 
   const selectRow = {
     mode: 'checkbox',
     clickToSelect: true,
-    selected: state.selected,
+    selected: genresSelected,
     onSelect: handleOnSelect,
-    onSelectAll: handleOnSelectAll,
   }
 
   return (
-    <ToolkitProvider
-      keyField="id"
-      data={tags}
-      columns={columns}
-      search
-    >
-      {
-        (props) => (
-          <div>
-            <h3>Search for genres:</h3>
-            <SearchBar {...props.searchProps} />
-            <hr />
-            <BootstrapTable
-              {...props.baseProps}
-              selectRow={selectRow}
-            />
-          </div>
-        )
-      }
-    </ToolkitProvider>
+    <>
+      <ToolkitProvider
+        keyField="id"
+        data={tags}
+        columns={columns}
+        search
+      >
+        {
+          (props) => (
+            <div>
+              <h3>Search for genres:</h3>
+              <SearchBar {...props.searchProps} />
+              <hr />
+              <BootstrapTable
+                {...props.baseProps}
+                selectRow={selectRow}
+              />
+            </div>
+          )
+        }
+      </ToolkitProvider>
+
+      <h3>Selected tags:</h3>
+      <CardColumns>
+        {
+          genresSelected.map((id) => {
+            const tag = tags.find((e) => e.id === id)
+            return (
+              <Card bg="primary" style={{ width: '14rem' }}>
+                <Card.Title>{tag.name}</Card.Title>
+              </Card>
+            )
+          })
+        }
+      </CardColumns>
+    </>
   )
 }
 

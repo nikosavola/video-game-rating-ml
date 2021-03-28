@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'jest',
   ],
   rules: {
     'react/jsx-props-no-spreading': ['off'],
