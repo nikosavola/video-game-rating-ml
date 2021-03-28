@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button'
+import { useSelector } from 'react-redux'
 import * as tf from '@tensorflow/tfjs'
 
 const Score = () => {
+  const genresSelected = useSelector((state) => state.genres)
   const [model, setModel] = useState()
   const [score, setScore] = useState(0.0)
 
@@ -15,9 +17,9 @@ const Score = () => {
   const handlePredict = (event) => {
     event.preventDefault()
 
-    const vector = Array(378).fill(0) // tf.zeros([1, 378])
-    const list = [0, 3]
-    list.forEach((index) => {
+    const vector = Array(378).fill(0)
+    const indices = genresSelected
+    indices.forEach((index) => {
       vector.splice(index, 1, 1)
     })
 
@@ -31,12 +33,14 @@ const Score = () => {
       <p className="score">
         Rating:
         {' '}
-        {score}
-        {' '}
-        %
+        <span className="latex">
+          {score}
+          {' '}
+          %
+        </span>
       </p>
-      <Button variant="primary" size="xxl" onClick={handlePredict}>
-        Predict
+      <Button className="predict" variant="primary" size="xxl" onClick={handlePredict}>
+        Predict 🚀
       </Button>
     </>
   )

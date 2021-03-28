@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  height: 100vh;
+  font-family: 'Noto Sans', 'Oxygen', 'Roboto', sans-serif;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin: 0 auto;
   max-width: 700px;
@@ -15,13 +15,12 @@
 }
 
 .App-header {
+  font-family: 'Computer Modern Serif', serif;
   background-color: #fff;
-  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
   color: black;
   margin-top: 1vmin;
   margin-bottom: 1vmin;
@@ -32,5 +31,19 @@ p {
 }
 
 p.score {
+  margin-top: 4px;
+  font-size: 24px;
+}
+
+.latex {
+  font-family: 'Computer Modern Serif', serif;
+}
+
+Button.predict {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+h3 {
   font-size: 24px;
 }
