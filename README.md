@@ -5,6 +5,8 @@
 
 **See live demo on [GitHub Pages](https://nikodagreat.github.io/video-game-rating-ml/)**.
 
+Python notebook for training and a .pdf report are included in the [training](https://github.com/NikoDaGreat/video-game-rating-ml/tree/main/training) folder.
+
 Originally a project for the course [CS-C3240 - Machine Learning](https://mycourses.aalto.fi/course/view.php?id=28173) provided by Aalto University.
 
 ### Implementation
