@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/video-game-rating-ml/static/css/main.69936b72.chunk.css",
-    "main.js": "/video-game-rating-ml/static/js/main.5adb2f67.chunk.js",
-    "main.js.map": "/video-game-rating-ml/static/js/main.5adb2f67.chunk.js.map",
-    "runtime-main.js": "/video-game-rating-ml/static/js/runtime-main.e4eb799c.js",
-    "runtime-main.js.map": "/video-game-rating-ml/static/js/runtime-main.e4eb799c.js.map",
+    "main.css": "/video-game-rating-ml/static/css/main.aa083725.chunk.css",
+    "main.js": "/video-game-rating-ml/static/js/main.58bc7504.chunk.js",
+    "main.js.map": "/video-game-rating-ml/static/js/main.58bc7504.chunk.js.map",
+    "runtime-main.js": "/video-game-rating-ml/static/js/runtime-main.7f8bfe84.js",
+    "runtime-main.js.map": "/video-game-rating-ml/static/js/runtime-main.7f8bfe84.js.map",
     "static/css/2.4b596dc6.chunk.css": "/video-game-rating-ml/static/css/2.4b596dc6.chunk.css",
-    "static/js/2.2f152187.chunk.js": "/video-game-rating-ml/static/js/2.2f152187.chunk.js",
-    "static/js/2.2f152187.chunk.js.map": "/video-game-rating-ml/static/js/2.2f152187.chunk.js.map",
-    "static/js/3.f191f9cb.chunk.js": "/video-game-rating-ml/static/js/3.f191f9cb.chunk.js",
-    "static/js/3.f191f9cb.chunk.js.map": "/video-game-rating-ml/static/js/3.f191f9cb.chunk.js.map",
+    "static/js/2.31e3aeea.chunk.js": "/video-game-rating-ml/static/js/2.31e3aeea.chunk.js",
+    "static/js/2.31e3aeea.chunk.js.map": "/video-game-rating-ml/static/js/2.31e3aeea.chunk.js.map",
     "index.html": "/video-game-rating-ml/index.html",
     "static/css/2.4b596dc6.chunk.css.map": "/video-game-rating-ml/static/css/2.4b596dc6.chunk.css.map",
-    "static/css/main.69936b72.chunk.css.map": "/video-game-rating-ml/static/css/main.69936b72.chunk.css.map",
-    "static/js/2.2f152187.chunk.js.LICENSE.txt": "/video-game-rating-ml/static/js/2.2f152187.chunk.js.LICENSE.txt"
+    "static/css/main.aa083725.chunk.css.map": "/video-game-rating-ml/static/css/main.aa083725.chunk.css.map",
+    "static/js/2.31e3aeea.chunk.js.LICENSE.txt": "/video-game-rating-ml/static/js/2.31e3aeea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e4eb799c.js",
+    "static/js/runtime-main.7f8bfe84.js",
     "static/css/2.4b596dc6.chunk.css",
-    "static/js/2.2f152187.chunk.js",
-    "static/css/main.69936b72.chunk.css",
-    "static/js/main.5adb2f67.chunk.js"
+    "static/js/2.31e3aeea.chunk.js",
+    "static/css/main.aa083725.chunk.css",
+    "static/js/main.58bc7504.chunk.js"
   ]
 }
