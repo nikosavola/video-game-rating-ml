@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/video-game-rating-ml/static/css/main.96ba9e33.chunk.css",
+    "main.js": "/video-game-rating-ml/static/js/main.eb37fea8.chunk.js",
+    "main.js.map": "/video-game-rating-ml/static/js/main.eb37fea8.chunk.js.map",
+    "runtime-main.js": "/video-game-rating-ml/static/js/runtime-main.436e78f4.js",
+    "runtime-main.js.map": "/video-game-rating-ml/static/js/runtime-main.436e78f4.js.map",
+    "static/css/2.3966517f.chunk.css": "/video-game-rating-ml/static/css/2.3966517f.chunk.css",
+    "static/js/2.93a9373b.chunk.js": "/video-game-rating-ml/static/js/2.93a9373b.chunk.js",
+    "static/js/2.93a9373b.chunk.js.map": "/video-game-rating-ml/static/js/2.93a9373b.chunk.js.map",
+    "static/js/3.a059cc86.chunk.js": "/video-game-rating-ml/static/js/3.a059cc86.chunk.js",
+    "static/js/3.a059cc86.chunk.js.map": "/video-game-rating-ml/static/js/3.a059cc86.chunk.js.map",
+    "index.html": "/video-game-rating-ml/index.html",
+    "static/css/2.3966517f.chunk.css.map": "/video-game-rating-ml/static/css/2.3966517f.chunk.css.map",
+    "static/css/main.96ba9e33.chunk.css.map": "/video-game-rating-ml/static/css/main.96ba9e33.chunk.css.map",
+    "static/js/2.93a9373b.chunk.js.LICENSE.txt": "/video-game-rating-ml/static/js/2.93a9373b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.436e78f4.js",
+    "static/css/2.3966517f.chunk.css",
+    "static/js/2.93a9373b.chunk.js",
+    "static/css/main.96ba9e33.chunk.css",
+    "static/js/main.eb37fea8.chunk.js"
+  ]
+}
