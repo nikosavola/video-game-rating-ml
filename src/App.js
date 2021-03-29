@@ -11,6 +11,20 @@ const App = () => (
       Predicting Video Game Rating from Genres using Multilayer Perceptron
     </header>
 
+    <p>
+      A multilayer-perceptron-based machine learning model was trained with
+      Steam data to predict a numeric rating for a video game based on its
+      classified genres (user tags from Steam).
+      See report
+      {' '}
+      <a href="https://github.com/NikoDaGreat/video-game-rating-ml/blob/main/training/report.pdf">here</a>
+      {' '}
+      for more detailed explanation.
+    </p>
+    <p>
+      Here you can predict ratings using the model by selecting genre tags.
+    </p>
+
     <Genres />
     <Score />
 
