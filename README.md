@@ -1,5 +1,6 @@
 # Predicting Video Game Rating from Genres using Multilayer Perceptron
 
+[![DOI](https://zenodo.org/badge/352089731.svg)](https://zenodo.org/badge/latestdoi/352089731)
 ![Unit tests](https://github.com/nikosavola/video-game-rating-ml/actions/workflows/test.yml/badge.svg)
 ![Build and deploy](https://github.com/nikosavola/video-game-rating-ml/actions/workflows/deploy.yml/badge.svg)
 
